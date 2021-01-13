@@ -196,6 +196,11 @@ button {
     color: black;
 }
 
+.search-form-search-button  {
+    position: relative;
+
+}
+
 .search-button-o{
     padding: 0rem 1rem;
     width: 234px;
@@ -216,7 +221,7 @@ button {
     line-height: 1.2;
     color: black;
 }
-.search-form-search-button{
+.search-button{
     padding: 0rem 1rem 0rem 1rem;
     width: auto;
     height: 3rem;
@@ -274,8 +279,121 @@ button {
     transition-duration: 0.3s;
     cursor: pointer;
 }
-.search-filter:hover{
+.search-filter:hover {
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
 }
-.search-filter-wrap-logo
+
+.search-filter-wrap-logo {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    position: relative;
+    min-width: 3rem;
+    min-height: 3rem;
+    z-index: 1;
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 3rem;
+}
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-info,
+.fa-dog     {
+    color: #0065FC;
+}
+
+.fa-info { 
+    font: size 0.75rem; ;
+
+}
+
+.title-search-filter {
+    padding: 0rem 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    
+}
+.search-result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-result-wrap-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+    cursor: pointer;
+
+
+}
+@media screen and (max-width:1018px) {
+    .search-header{
+        margin-bottom: 2rem;
+    }
+    .filter-header{
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
+    .search-filter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 1rem ;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search-header{
+        margin-bottom: 2rem;
+    }
+    .search-button-o{
+        width: 210px;
+        padding: 0rem 4rem 0rem 1rem;
+    }
+    .search-button{
+        display: none;
+        z-index: -1;
+    }
+    .search-mask {
+        display: flex;
+        z-index: 1;
+        border-bottom: 1px solid #FFFFFF;
+
+    }
+    .search-form-wrap-logo-right{
+        display:flex;
+        z-index: 2;
+        border-bottom: 1px solid #0065FC;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .search-header{
+        align-items: flex-start;
+    }
+    .search-filter{
+        align-items: flex-start;    
+    }
+    .filter-header{
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
+    .search-filters{
+        row-gap: 0,5rem;
+        justify-content: flex-start;
+    }
+    .search-result{
+        justify-content: flex-start;
+    }
+}
+
