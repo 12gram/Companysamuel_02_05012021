@@ -75,7 +75,7 @@ button {
 .activity-section,
 .footer-section {
     padding: 0rem 2.5vw;
-    width: 95vw;
+    width: 90vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,9 +112,10 @@ button {
     min-height: 45px
 }
 
-    .nav-logo{
+.nav-link{
     padding-top: 50px;
     padding-bottom: 16px;
+    padding-right: -10px;
     text-align: center;
     color: var(--color-black);
     cursor: pointer;
@@ -790,21 +791,27 @@ button {
 ==========FOOTER=============
 ===========================*/
 
-.footer-section {
+.footer-section-box {
     background-color: var(--color-gray);
+    
 }
 
 .footer-wrap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3rem 0rem;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 3rem 0rem ;
+    padding-left: 3rem;
 }
 
-.title-footer-collumn {
+.footer-column-link:hover {
+    color: #0065FC;
+}
+
+.footer-column-title {
     padding-bottom: 1rem;
 }
 
-.footer-item {
+.footer-column-item {
     padding-bottom: 1rem;
 }
 
@@ -819,7 +826,7 @@ button {
         padding-bottom: 1rem;
     }
 
-    .footer-item {
+    .footer-column-item {
         padding-bottom: 1rem;
     }
 }
