@@ -115,7 +115,6 @@ button {
 .nav-link{
     padding-top: 50px;
     padding-bottom: 16px;
-    padding-right: -10px;
     text-align: center;
     color: var(--color-black);
     cursor: pointer;
@@ -406,10 +405,11 @@ button {
     .search-form-wrap-logo-right {
         display: flex;
         z-index: 2;
-        border-bottom: 1px solid var(--color-blue);
-    }
+        border: 1rem solid var(--color-blue); 
+    } 
 }
 
+        
 @media screen and (max-width: 600px) {
     .search-header {
         align-items: flex-start;
@@ -824,9 +824,11 @@ button {
 
     .footer-column {
         padding-bottom: 1rem;
+        padding-left: 2rem;
     }
 
     .footer-column-item {
         padding-bottom: 1rem;
-    }
+         }
+
 }
